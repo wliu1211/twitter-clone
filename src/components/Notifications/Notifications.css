@@ -1,0 +1,59 @@
+.notifications-section .notifications-header h3{
+    padding: 20px;
+}
+
+
+.notifications-section .notifications-switch-container{
+    display: flex;
+
+}
+
+.notifications-switch-container .switch-item-container{
+    padding: 25px 0;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+}
+
+.notifications-switch-container .switch-item-container.selected{background-color: var(--hover-list-bg-color);}
+
+.notifications-switch-container .switch-item-container:hover{
+    background-color: var(--hover-list-bg-color);
+    cursor: pointer;
+
+}
+.notifications-list-container{
+    overflow-y: scroll;
+    height: 440px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.notifications-list-container::-webkit-scrollbar{
+    display: none;
+}
+.notifications-list-container .notifications-item-container{display: flex;}
+.notifications-list-container .notifications-item-container:hover{
+    background-color: var(--hover-list-bg-color);
+}
+.notifications-list-container .notifications-item-container .noti-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.notifications-list-container .notifications-item-container .noti-img-container img{
+    max-width: 3rem;
+    max-height: 3rem;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.notifications-list-container .notifications-item-container .noti-info-container{
+    margin: 15px 30px;
+}
+.notifications-list-container .notifications-item-container .noti-icon{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}

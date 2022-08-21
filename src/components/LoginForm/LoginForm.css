@@ -1,0 +1,97 @@
+.login-container{
+     color: var(--text-color);
+     
+     
+}
+
+.login-container .login-body-container{
+    max-width: var(--size-300);
+    width: 100%;
+    margin: auto;
+}
+
+.login-container .login-body-container .register-google-btn,
+.login-container .login-body-container .register-apple-btn,
+.login-container .login-body-container .next-btn,
+.login-container .login-body-container .forgot-btn{
+    width: var(--size-300);
+    height: var(--size-40);
+    background-color:white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.login-container .login-body-container .forgot-btn{
+    background-color:rgb(56,56,56);
+    color: white;
+    border: 1px solid black;
+
+}
+
+.login-container .login-body-container .register-google-btn p,
+.login-container .login-body-container .register-apple-btn p{
+    margin-left: 10px;
+}
+
+.login-container .login-body-container .signin-or{
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.login-container .login-body-container .signin-or::after,
+.login-container .login-body-container .signin-or::before{
+    content: '';
+    width: 135px;
+    border: 1px solid var(--text-color);
+    position: absolute;
+    top: 10px;
+}
+.login-container .login-body-container .signin-or:after{
+    right: 0;
+}
+
+.login-container .login-body-container .signin-or:before{
+    left: 0;
+}
+
+.login-container .login-body-container .signin-input{
+    width: 100%;
+    height: var(--size-50);
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.login-container .login-body-container .signin-input:focus{
+    outline: 2px solid var(--primary-color);
+}
+
+.login-container .login-body-container .register-text{
+    color: var(--primary-color);
+}
+.login-container .login-body-container .register-text.register-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-container .login-body-container .login-btn{
+    width: 100%;
+    border-radius: 20px;
+    height: 35px;
+    background-color: var(--success-color);
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    margin: 5px 0;
+}
+
+.login-container .login-body-container .login-btn:hover{
+    cursor: pointer;
+}

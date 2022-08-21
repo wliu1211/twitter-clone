@@ -1,0 +1,13 @@
+.twitter-home-section{
+    height: 100vh;
+    width: 100%;
+    color: var(--text-color);
+
+}
+
+.twitter-home-section .home-container{
+    display: flex;
+    max-width: 78.125rem;
+    width: 100%;
+    margin: 0 auto;
+}

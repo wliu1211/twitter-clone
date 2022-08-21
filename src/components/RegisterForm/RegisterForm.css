@@ -1,0 +1,47 @@
+.register-container .register-body-container{
+    color: rgb(230, 230, 230);
+}
+
+.register-body-container .register-dob-header
+{
+    margin-bottom: 10px;
+}
+.register-body-container .register-dob-text{
+    margin-bottom: 20px;
+}
+.register-container .register-input,
+.register-container .register-submit{
+    max-width: var(--size-500);
+    width: 100%;
+    height: var(--size-50);
+    padding: 5px;
+    margin: 13px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    
+}
+
+.register-container input:focus{
+    outline: none;
+}
+.register-container input::placeholder{
+    color: rgb(199, 199, 199);
+}
+
+.register-container .birthday-picker{
+    border: 1px solid red;
+}
+
+.register-container .register-submit{
+    background-color: var(--success-color);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.register-container .register-submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

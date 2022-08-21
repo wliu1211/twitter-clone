@@ -1,0 +1,30 @@
+.main-nav{
+    width: var(--size-250);
+}
+.main-nav .nav-link{
+    text-decoration: none;
+}
+.main-nav .nav-container .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 5px;
+    border-radius: 20px;
+    color: var(--text-color);
+}
+.main-nav .nav-container .nav-item.active{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.main-nav .nav-container .nav-item:hover{
+    background-color: var(--hover-list-bg-color); 
+    cursor: pointer;
+
+}
+
+.main-nav .nav-container .nav-item p{
+    margin-left: 20px;
+    padding-right: 20px;
+}

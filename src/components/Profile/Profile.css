@@ -1,0 +1,177 @@
+.profile-section{
+    width: 100%;
+}
+
+.profile-section .profile-header{
+    display: flex;
+}
+
+.profile-header .profile-back-btn{
+    padding: 7px;
+}
+ .profile-header .profile-header-info{
+     margin-top: 7px;
+     margin-left: 20px;
+ }
+ .profile-header .profile-header-info p{
+     font-size: 0.8rem;
+    color: rgb(100,104,109);
+ }
+ 
+.profile-section .profile-body-container{
+    overflow-y: scroll;
+    height: 94vh;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.profile-section .profile-body-container::-webkit-scrollbar{
+    display: none;
+}
+ .profile-body{
+    position: relative;
+ }
+.profile-body .profile-bg-grey{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(51,54,57);
+}
+
+.profile-body .profile-picture-container{
+    width: var(--size-140);
+    height: var(--size-140);
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -50%);
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-body .profile-picture-container img {
+    max-width: 8.15rem;
+    max-height: 8.15rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profile-body .profile-info-container{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0,0,0);
+}
+.profile-info-container .profile-setup-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.profile-info-container .profile-setup-container button{
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(83,100,113);
+    background-color: rgb(0,0,0);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+
+.profile-info-container .profile-setup-container button:hover{
+    background-color: rgb(50,50,50, 0.8);
+}
+.profile-info-container .profile-identity-container{
+    margin-top: 20px;
+    
+}
+.profile-info-container .profile-identity-container .profile-twitterHandle {
+    font-size: 0.85rem;
+    color: rgb(100,104,109);
+}
+
+
+
+
+.profile-body .profile-info-container .profile-date-container{
+    display: flex;
+    padding: 0 20px;
+    color: rgb(100,104,109);
+    font-size: 0.9rem;
+
+}
+.profile-info-container .profile-date-container .profile-join{
+    margin-left: 20px;
+}
+
+.profile-info-container .profile-date-container .dob-icon
+,.profile-info-container .profile-date-container .calendar-icon {
+    margin-right: 5px;
+    
+}
+.profile-body .profile-info-container .profile-follow-container{
+    display: flex;
+}
+.profile-info-container .profile-follow-container .profile-followings,
+.profile-info-container .profile-follow-container .profile-followers{
+    color: rgb(100,104,109);
+    font-size: 0.85rem;
+
+}
+.profile-info-container .profile-follow-container .profile-followings:hover ,
+.profile-info-container .profile-follow-container .profile-followers:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.profile-info-container .profile-follow-container .profile-followers{
+    margin-left: 10px;
+}
+
+.profile-body .profile-info-container > div {
+    padding: 10px 20px;
+}
+
+.profile-section .user-private-action-switcher{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+.user-private-action-switcher .switcher-container{
+    width: 100%;
+    max-width: var(--size-200); 
+    display: flex;
+    justify-content:center;
+    padding: 5px 0;
+}
+.user-private-action-switcher .switcher-container .text-fitter{
+    max-width: fit-content;
+    width: 100%;
+}
+
+.user-private-action-switcher .switcher-container:hover{
+    cursor: pointer;
+    background-color: rgb(24,24,24);
+}
+
+.switcher-container .text-fitter .switcher-shadow{
+    width: 100%;
+    height: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: translateY(5px);
+}
+.switcher-container .text-fitter .switcher-shadow.active{
+    background-color: blue;
+
+}
+
+.profile-body-container .user-action-display{
+    display: flex;
+    flex-direction: column-reverse;
+}

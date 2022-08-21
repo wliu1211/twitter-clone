@@ -1,0 +1,185 @@
+
+.home-screen .home-screen-header{
+    padding: 20px;
+}
+
+.home-screen .tweet-header{
+    display: flex;
+    padding: 20px;
+    
+}
+.tweet-list-container .avatar-img-wrapper{
+    height: 50px;
+}
+.tweet-list-container .tweet-header img,
+.tweet-list-container .avatar-img-wrapper img,
+.avatar-img-wrapper img,
+.tweet-header img{
+    max-width: 3rem;
+    max-height: 3rem;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.home-screen .tweet-header .tweet-input{
+    background-color: var(--dark-theme-color);
+    color: white;
+    font-family: sans-serif, 'Roboto';
+    padding: 10px;
+    margin-left: 20px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.home-screen .tweet-header .tweet-input:focus{
+    outline: none;
+}
+
+/* TWEET LIST */
+.home-screen .home-tweet-container{
+    overflow-y: scroll;
+    height: 850px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.home-screen .home-tweet-container::-webkit-scrollbar{
+    display: none;
+}
+.home-screen .home-tweet-container .tweet-btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.home-screen .home-tweet-container .btn{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+
+.tweet-list{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.retweet-tweet-container{
+    position: relative;
+}
+.retweet-header{
+    display: flex;
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+ .retweet-header .retweet-label{
+    margin-left: 20px;
+}
+
+.tweet-list-container {
+    border-top: 1px solid grey;
+    position: relative;
+
+}
+.tweet-list-container .tweet-container{
+    padding: 20px;
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+}
+.tweet-list-container .tweet-container.retweet{
+    padding: 30px 20px;
+
+}
+.tweet-list-container .detail-header-container .edit-btn,
+.tweet-list-container .detail-header-container .cancel-edit-btn,
+.tweet-list-container .detail-header-container .delete-tweet-btn{
+    position: absolute;
+    right: 50px;
+    width: fit-content;
+}
+.tweet-list-container .detail-header-container .edit-btn:hover,
+.tweet-list-container .detail-header-container .cancel-edit-btn:hover,
+.tweet-list-container .detail-header-container .delete-tweet-btn:hover{
+    cursor: pointer;
+}
+
+.tweet-list-container .detail-header-container .cancel-edit-btn{
+    font-size: 1.15rem;
+    right: 75px;
+}
+.tweet-list-container .detail-header-container .delete-tweet-btn{
+    font-size: 1.15rem;
+    right: 27px;
+
+}
+.tweet-list-container .detail-header{
+    position: relative;
+}
+
+.tweet-list-container .detail-header .user-name{
+    margin-right: 10px;
+}
+.tweet-list-container .detail-header .user-handle{
+    margin-right: 21px;
+    color: rgb(100,105,109);
+}
+
+.tweet-list-container .detail-header .tweet-timestamp{
+    color: rgb(100,105,109);
+    
+}
+.tweet-list-container .detail-header .user-handle::after{
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color:rgb(100,105,109);
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    margin-left: 10px;
+}
+
+.tweet-list-container .tweet-detail-container{
+    margin-left: 20px;
+}
+
+.tweet-list-container .tweet-detail-container .detail-header{display: flex;}
+
+.tweet-list-container .detail-body{margin: 15px 0;}
+
+.tweet-list-container .detail-body .tweet-edit-input{
+    width: 100%;
+    background-color: transparent !important;
+    border: none;
+    height: 75px;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 1px solid white;
+    resize: none;
+}
+.tweet-list-container .detail-body .tweet-edit-input:focus{outline: none}
+.tweet-list-container .detail-action-container{
+    display: flex;
+}
+.tweet-list-container .detail-action-container .action-item-container{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    color: rgb(100,104,109);
+}
+.tweet-list-container .detail-action-container .action-item-container:hover{
+    cursor: pointer;
+    color: rgb(57, 159, 255);
+}
+.tweet-list-container .detail-action-container .action-icon{
+    padding-right: 5px;
+}
+

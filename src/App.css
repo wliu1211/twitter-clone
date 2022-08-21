@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --text-color: rgb(217,217,217);
+  --primary-color: rgb(29,155,240);
+  --danger-color: rgb(230,111,69);
+  --success-color: rgb(40,167,69);
+  --dark-theme-color: rgb(0,0,0);
+  --hover-list-bg-color: rgb(32, 32, 32);
+  --size-5: 0.313rem;
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-75: 4.688rem;
+  --size-100: 6.25rem;
+  --size-140: 8.75rem;
+  --size-150: 9.375rem;
+  --size-200: 12.5rem;
+  --size-225: 14.063rem;
+  --size-250: 15.625rem;
+  --size-300: 18.75rem;
+  --size-350: 21.875rem;
+}
+
+.App{
+  background-color: var(--dark-theme-color);
+
+}
+button{
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.error-text{
+  color: var(--danger-color);
+  margin: 5px 0;
+}

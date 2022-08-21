@@ -1,0 +1,8 @@
+.feed-container{
+    border: 1px solid grey;
+    border-top: none;
+    /* border-bottom: none; */
+    max-width: 37.5rem;
+    
+    width: 100%;
+}

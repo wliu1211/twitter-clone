@@ -1,0 +1,52 @@
+.text-bubble-container{
+    display: flex;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 270px;
+    width: fit-content;
+}
+
+
+.text-bubble-container.user-side{
+    background-color: rgb(51, 163, 255);
+    margin-left: auto;
+    color: black;
+}
+.text-bubble-container.client-side{
+    background-color: transparent;
+    margin-right: auto;
+    border: 1px solid white;
+    color: white;
+}
+
+.text-bubble-container .text-img-container{
+    margin-right: 10px;
+}
+.text-bubble-container .text-img-container img{
+    max-width: 2rem;
+    max-height: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.text-bubble-container .text-detail-container{
+    
+}
+
+.text-bubble-container .text-detail-container .text-credential-wrapper{
+    display: flex;
+    margin: 7px 0 10px;
+}
+
+.text-detail-container .text-credential-wrapper .cred-twitterHandle{
+    margin-left: 10px;
+}
+
+.text-detail-container .dm-text{
+    word-wrap: break-word;
+    max-width: 200px;
+}
